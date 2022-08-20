@@ -7,10 +7,10 @@ const destructivelyPrependCat = (cat)=>{
     return cats.unshift(cat)
 }
 const destructivelyRemoveFirstCat = (cat)=>{
-    return cats.shift(cat)
+    return cats.shift();
 }
 const destructivelyRemoveLastCat = (cat)=>{
-    return cats.pop(cat)
+    return cats.splice([-1]);
 }
 const appendCat = (cat)=>{
     return [...cats, cat]
